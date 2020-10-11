@@ -1,5 +1,5 @@
 
-Search up Norwegian postal codes
+# Search up Norwegian postal codes
 
 ## installation 
 `npm install norpcodes`
