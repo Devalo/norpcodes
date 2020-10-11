@@ -1,13 +1,26 @@
 {
   "name": "norpcodes",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Search up, and verify norwegian postal codes",
   "main": "index.js",
   "scripts": {
     "test": "jest"
   },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Devalo/norpcodes.git"
+  },
+  "keywords": [
+    "norwegian postal codes",
+    "postnummer",
+    "norway",
+    "norwegian",
+    "area code",
+    "postal code"
+  ],
   "author": "Stephan Valois",
   "license": "ISC",
+  "homepage": "https://github.com/Devalo/norpcodes",
   "dependencies": {},
   "devDependencies": {
     "jest": "^26.5.2"
