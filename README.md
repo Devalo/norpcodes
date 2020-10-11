@@ -1,17 +1,16 @@
-## Search up Norwegian postal codes
----
 
-### installation 
+# Search up Norwegian postal codes
+
+## installation 
 `npm install norpcodes`
 
-Import the library into your JS file
+`import norpcodes from 'norpcodes';` <br />
+or if using CommonJS <br />
+`const norpcodes = require('norpcodes');`
 
-`import norpcodes from 'norpcodes';
-or
-const norpcodes = require('norpcodes');`
----
 
-### Usage:
+
+## Usage:
 
 To verify that the postal code is valid:
 `norpcodes.validPostalCode('0001)`
@@ -27,8 +26,3 @@ To find the county code:
 
 To find the county category:
 `norpcodes.getPostalCodeCountyCategory('0001)`
-
-
-
-
-

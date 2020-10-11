@@ -1,6 +1,6 @@
 {
   "name": "norpcodes",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Search up, and verify norwegian postal codes",
   "main": "index.js",
   "scripts": {
