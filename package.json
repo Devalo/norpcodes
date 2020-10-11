@@ -1,0 +1,15 @@
+{
+  "name": "norpcodes",
+  "version": "0.1.0",
+  "description": "Search up, and verify norwegian postal codes",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Stephan Valois",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^26.5.2"
+  }
+}
