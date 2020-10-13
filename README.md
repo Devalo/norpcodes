@@ -26,3 +26,6 @@ To find the county code:
 
 To find the county category:
 `norpcodes.getPostalCodeCountyCategory('0001)`
+
+To find all the postal codes for a specific location:
+`norpcodes.getPostalCode('SEM')`

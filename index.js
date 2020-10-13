@@ -32,3 +32,15 @@ exports.getPostalCodeCategory = function(code) {
     return areaLocation.kategori;
   } 
 }
+
+exports.getPostalCode = function(location) {
+  const numContainer = [];
+  if (postalCodes) {
+    for (let i in postalCodes) {
+      if (location.toUpperCase() === postalCodes[i].poststed) {
+        numContainer.push(i);
+      }
+    }
+    return numContainer;
+  } 
+}

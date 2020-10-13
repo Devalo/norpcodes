@@ -47,3 +47,16 @@ describe('getPostalCodeCountyCategory', () => {
   });
 });
 
+describe('getPostalCode', () => {
+  it('it returns the postal code(s) of the location', () => {
+    expect(norpcodes.getPostalCode('SEM')).toContain('3170');
+  });
+  it('receives even if lower case', () => {
+    expect(norpcodes.getPostalCode('sem')).toContain('3170');
+  });
+  it('else returns undefined', () => {
+    expect(norpcodes.getPostalCode('BLERP')).toHaveLength(0);
+  });
+});
+
+
