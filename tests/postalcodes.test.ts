@@ -1,6 +1,6 @@
 // test suites with JEST
 
-const norpcodes = require ('../index.js');
+import norpcodes from '../index';
 
 describe('validPostalCode', () => {
   it('returns true if postal code exists', () => {

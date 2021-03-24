@@ -21,8 +21,13 @@
   "author": "Stephan Valois",
   "license": "ISC",
   "homepage": "https://github.com/Devalo/norpcodes",
-  "dependencies": {},
+  "dependencies": {
+    "@types/jest": "^26.0.21",
+    "typescript": "^4.2.3"
+  },
   "devDependencies": {
-    "jest": "^26.5.2"
-  }
+    "jest": "^26.5.2",
+    "ts-jest": "^26.5.4"
+  },
+  "types": "index.d.ts"
 }

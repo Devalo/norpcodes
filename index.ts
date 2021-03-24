@@ -1,39 +1,44 @@
-const postCodes = require('./resources/postalcodes.json');
+import * as postCodesRaw from './resources/postalcodes.json';
 
-exports.validPostalCode = function(code) {
+type Tcode = number | string;
+
+const postCodes: any = postCodesRaw;
+
+const validPostalCode = (code: Tcode): true | undefined => {
   const areaLocation = postCodes[code];
   if (areaLocation) return true;
 }
 
-exports.getPostalCodeName = function(code) {
+const getPostalCodeName = (code: Tcode): string | undefined  => {
   const areaLocation = postCodes[code];
   if (areaLocation) {
     return areaLocation.poststed;
   } 
+  return 
 }
 
-exports.getPostalCodeCountyName = function(code) {
+const getPostalCodeCountyName = (code: Tcode): string | undefined => {
   const areaLocation = postCodes[code];
   if (areaLocation) {
     return areaLocation.kommunenavn;
   } 
 }
 
-exports.getPostalCodeCountyNumber = function(code) {
+const getPostalCodeCountyNumber = (code: Tcode): string | undefined => {
   const areaLocation = postCodes[code];
   if (areaLocation) {
     return areaLocation.kommunenummer;
   } 
 }
 
-exports.getPostalCodeCategory = function(code) {
+const getPostalCodeCategory = (code: Tcode): string | undefined => {
   const areaLocation = postCodes[code];
   if (areaLocation) {
     return areaLocation.kategori;
   } 
 }
 
-exports.getPostalCode = function(location) {
+const getPostalCode = (location: string): string[] | undefined => {
   const numContainer = [];
   if (postCodes) {
     for (let i in postCodes) {
@@ -43,4 +48,13 @@ exports.getPostalCode = function(location) {
     }
     return numContainer;
   } 
+}
+
+export default {
+  validPostalCode,
+  getPostalCodeName,
+  getPostalCodeCountyName,
+  getPostalCodeCountyNumber,
+  getPostalCodeCategory,
+  getPostalCode,
 }
